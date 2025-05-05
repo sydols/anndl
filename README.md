@@ -43,7 +43,14 @@ The custom CNN performed slightly better if not the same as logistic regression 
 ![CustomCNNAccuracy](https://github.com/user-attachments/assets/744ae98f-0337-4384-bf1b-e7095a2e209b)
 ![CustomCNNLoss](https://github.com/user-attachments/assets/4b76ec50-8be5-49c8-99fb-366e279b0a11)
 
+To have something more polished to compare the custom CNN to, I used the MobileNetV2 architecture which has been pre trained on ImageNet. I used the base model and added some simple classifiers to it to better fit my dataset. 
 
+<img width="597" alt="mobilecode" src="https://github.com/user-attachments/assets/fe66b2b8-5a04-401d-ba9f-279a87bbbca7" />
 
+Surprisingly, this had similar results as my custom CNN which makes me think that I’ve hit a glass ceiling on this data set or I don’t have the tools necessary to fine tune a model into 90% accuracy. 
 
+![MobileNetV2Loss](https://github.com/user-attachments/assets/4e9017fb-aa7c-4e28-982d-e7ac6fa83129)
 
+Logistic regression and the classical CNN both performed better than I expected so working on improving their accuracy was something I struggled with. I tweaked my custom CNN for a couple days before settling on a two block method to reduce overfitting and improve generalization. It was difficult to juggle run-time while giving the model a fair chance at succeeding the classical CNN and logistic regression models. I settled on giving each model the same input image size and the same amount of epochs to keep it fair and dealt with the longer run times. 
+
+At the end of the day, the differences between the custom CNN, MobileNetV2, logistic regression, and classical CNN models are not statistically significant enough to label as differences. Whether this has to do with the data itself, my skills, or the fact that maybe it is hard for neural networks to consistently identify AI-generated versus real images. However, even though not statistically significantly different, each model did pretty well labeling each image with an average accuracy of 83%. I would say that it is possible for neural networks to identify AI generated images which brings hope to the future of media literacy.
