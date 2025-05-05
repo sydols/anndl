@@ -38,6 +38,12 @@ Lastly, the custom CNN reduces each feature map to a single value to reduce over
 
 <img width="319" alt="custompool" src="https://github.com/user-attachments/assets/85c18966-61e4-485b-8a0d-dc13055a956c" />
 
+The custom CNN performed slightly better if not the same as logistic regression and classic CNN models.
+
+![CustomCNNAccuracy](https://github.com/user-attachments/assets/744ae98f-0337-4384-bf1b-e7095a2e209b)
+![CustomCNNLoss](https://github.com/user-attachments/assets/4b76ec50-8be5-49c8-99fb-366e279b0a11)
+
+
 
 
 
