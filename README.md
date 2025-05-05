@@ -54,3 +54,9 @@ Surprisingly, this had similar results as my custom CNN which makes me think tha
 Logistic regression and the classical CNN both performed better than I expected so working on improving their accuracy was something I struggled with. I tweaked my custom CNN for a couple days before settling on a two block method to reduce overfitting and improve generalization. It was difficult to juggle run-time while giving the model a fair chance at succeeding the classical CNN and logistic regression models. I settled on giving each model the same input image size and the same amount of epochs to keep it fair and dealt with the longer run times. 
 
 At the end of the day, the differences between the custom CNN, MobileNetV2, logistic regression, and classical CNN models are not statistically significant enough to label as differences. Whether this has to do with the data itself, my skills, or the fact that maybe it is hard for neural networks to consistently identify AI-generated versus real images. However, even though not statistically significantly different, each model did pretty well labeling each image with an average accuracy of 83%. I would say that it is possible for neural networks to identify AI generated images which brings hope to the future of media literacy.
+
+SOURCES
+
+Krizhevsky, A., & Hinton, G. (2009). Learning multiple layers of features from tiny images.
+
+Bird, J.J. and Lotfi, A., 2024. CIFAKE: Image Classification and Explainable Identification of AI-Generated Synthetic Images. IEEE Access.
